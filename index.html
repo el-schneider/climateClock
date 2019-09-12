@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Climate Clock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/C02calculator.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+<body>
+    <button id="degree-switcher-1" data-doom="December 01, 2034 08:07:09" class="btn"><div>1.5°</div><span>>1.5º</span></button>
+    <button id="degree-switcher-2" data-doom="August 02, 2052 12:42:16" class="btn"><div>2.0°</div><span>>2.0º</span></button>
+    <!-- <h3>GLOBAL WARMING TO DATE</h3> -->
+    <div class="container">
+        
+        <div id="globaltemp" class="counter-container">
+            <h2>Human contribution to global temperature increase</h2>
+            <div class="counter value"></div>
+            <div class="unit">°C</div>
+        </div>
+        
+        <div id="carbontonnes" class="counter-container">            
+            <h2>CO<sub>2</sub> budget left</h2>
+            <div class="value counter"></div>
+            <div class="unit">tons</div>
+        </div>
+            
+        
+        <div id="time-to-doom" class="counter-container">
+            <h2>Time left to +1.5°C</h2>
+            <div id="timecountdown" class="value counter"></div>
+        </div>
+    </div>
+</body>
+</html>
