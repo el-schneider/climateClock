@@ -40,7 +40,7 @@ function myTimer() {
     }
 
 
-    $("#timecountdown").text(getDateTimeTill(doomDate));
+    $("#timecountdown").html(getDateTimeTill(doomDate));
 }
 
 function getDateTimeTill(target) { // target should be a Date object
@@ -63,7 +63,7 @@ function getDateTimeTill(target) { // target should be a Date object
             break;
     }
 
-    if (yd > 0) out.push(yd + ":" + (yd == 1 ? "" : ""));
+    if (yd > 0) out.push("<span class='unit years'>years</span>" + yd + ":" + (yd == 1 ? "" : ""));
     if (md < 10 && md >= 0)
         out.push("0" + md + ":" + (md == 1 ? "" : ""));
     else if (md >= 10)

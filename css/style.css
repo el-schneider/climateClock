@@ -124,4 +124,10 @@ html, body {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
 }
+
+#timecountdown .unit {
+  position: absolute;
+  font: 1rem "Katwijk Mono", "Courier Sans", monospace;
+  bottom: -2rem;
+}
 /*# sourceMappingURL=style.css.map */

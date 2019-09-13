@@ -1,8 +1,10 @@
 @import "reset";
 @import "fonts";
 
+$primaryFont: "Katwijk Mono", "Courier Sans", monospace;
+
 html, body {
-    font: 1.2vw "Katwijk Mono", "Courier Sans", monospace;
+    font: 1.2vw $primaryFont;
     text-align: left;
     height: 100%;
 }
@@ -53,4 +55,12 @@ html, body {
         transform: rotate(-90deg);
         transform-origin: 0 0;
     }   
+}
+
+#timecountdown {
+    .unit {
+        position: absolute;
+        font: 1rem $primaryFont;
+        bottom: -2rem;
+    }
 }
